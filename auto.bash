@@ -4,7 +4,7 @@
 USERNAME=$(whoami)  
   
 # Inhalt des Crontab-Eintrags für 14:20 Uhr  
-CRON_ENTRY="0 0 * * * /usr/bin/python3 $HOME/link.py"  
+CRON_ENTRY="0 0 * * * /usr/bin/python3 $HOME/tutti-toeffli-links-in-websete-auf-paspberry-pi/link.py"  
   
 # (Optional) Crontab-Befehl sichern  
 (crontab -l ; echo "$CRON_ENTRY") | crontab -  
