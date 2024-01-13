@@ -9,5 +9,9 @@ git clone https://github.com/Benzauber/tutti-toeffli-links-in-websete-auf-raspbe
 ```
 3.
 ```bash
-bash tutti-toeffli-links-in-websete-auf-raspberry-pi/install.bash
+cd tutti-toeffli-links-in-websete-auf-raspberry-pi
+```
+4.
+```bash
+bash install.bash
 ```
