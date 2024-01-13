@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textdatei-Anzeige</title>
+</head>
+<body>
+    <h1>Links aus der Textdatei:</h1>
+    <ul id="linkList"></ul>
+
+    <script>
+        // JavaScript, um die Textdatei zu laden und Links anzuzeigen
+        fetch('links.txt')
+            .then(response => response.text())
+            .then(text => {
+                const linkList = document.getElementById('linkList');
+                const links = text.split('\n').filter(link => link.trim() !== '');
+
+                links.forEach(link => {
+                    const listItem = document.createElement('li');
+                    const anchor = document.createElement('a');
+                    anchor.href = link;
+                    anchor.target = '_blank';
+                    anchor.textContent = link;
+                    listItem.appendChild(anchor);
+                    linkList.appendChild(listItem);
+                });
+            })
+            .catch(error => console.error('Fehler beim Laden der Textdatei:', error));
+    </script>
+</body>
+</html>
