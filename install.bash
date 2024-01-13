@@ -3,10 +3,10 @@
 echo "Wird installiert"
 sudo apt-get update
 sudo apt-get install python3-pip
-pip install requests
 python3 -m venv myenv
 source myenv/bin/activate
 pip install beautifulsoup4
+pip install requests
 
 echo "Webseite wird eingerichtet"
 sudo apt-get install apache2
