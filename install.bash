@@ -3,12 +3,14 @@
 echo "Wird installiert"
 sudo apt-get update
 sudo apt-get install python3-pip
+pip install requests
+python3 -m venv myenv
+source myenv/bin/activate
 pip install beautifulsoup4
 
 echo "Webseite wird eingerichtet"
 sudo apt-get install apache2
 sudo chmod a+w /var/www/html/
-sudo pip install beautifulsoup4
 
 sudo rm /var/www/html/index.html
 echo "/var/www/html/index.html wurde gelöscht"
@@ -19,3 +21,4 @@ chmod +x auto.bash
 ./auto.bash
 
 python link.py
+
