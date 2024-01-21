@@ -17,8 +17,4 @@ echo "/var/www/html/index.html wurde gelöscht"
 sudo cp index.html /var/www/html/
 echo "index.html wurde nach /var/www/html/ kopiert"
 
-chmod +x auto.bash
-./auto.bash
-
-python link.py
-
+bash auto.bash
