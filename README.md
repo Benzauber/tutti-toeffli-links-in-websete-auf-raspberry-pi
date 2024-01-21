@@ -1,4 +1,4 @@
-# Tutti Töffli Links in Webseite auf Raspberry Pi
+# Tutti Töffli (Puch) Links in Webseite auf Raspberry Pi
 
 ## Installation
 
