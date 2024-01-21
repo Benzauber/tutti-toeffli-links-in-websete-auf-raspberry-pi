@@ -12,3 +12,4 @@ cleaned_lines = [line for i, line in enumerate(cleaned_lines) if i % 2 != 0]
 with open('/var/www/html/links.txt', 'w') as file:
     file.writelines(cleaned_lines)
 
+
