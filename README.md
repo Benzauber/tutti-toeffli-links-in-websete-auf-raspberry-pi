@@ -24,7 +24,7 @@ cd tutti-toeffli-links-in-websete-auf-raspberry-pi
 ### Schritt 4: Führe die Installationsroutine aus
 
 ```bash
-bash install.bash
+sudo ./install.bash
 ```
 
 ### Das Setup ist abgeschlossen.
